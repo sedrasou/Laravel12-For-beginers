@@ -14,6 +14,10 @@ return new class extends Migration
         Schema::create('catigories', function (Blueprint $table) {
             $table->id();
             $table->string("name");
+              $table->string("title");
+              $table->text("description");
+              $table->boolean("isactive");
+              $table->integer("views");
             $table->timestamps();
         });
     }
